@@ -1,0 +1,16 @@
+<hr>
+<h1>Data binding</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <label class="form-label">User Name</label>
+            <input type="text" class="form-control" [(ngModel)]="userName">
+            <p>{{userName}}</p>
+        </div>
+        <div class="col-xs-12">
+        <!-- <button class="btn btn-sm btn-primary" [disabled] ="OnDisableChack()" (click)="OnSetValue()">Launch demo modal</button> -->
+        <button class="btn btn-sm btn-primary" [disabled] ="userName === ''" (click)="OnSetValue()">Launch demo modal</button>
+        </div>
+    </div>
+</div>
+

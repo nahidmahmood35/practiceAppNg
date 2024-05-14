@@ -1,0 +1,22 @@
+<hr>
+<h1>Directive</h1>
+<div class="container">
+    <div class="row">
+     
+        <div class="col-xs-12">
+     
+        <button class="btn btn-sm btn-primary"  (click)="OnShowHide()">Launch demo modal</button>
+        </div>
+         <div class="col-xs-12">
+        <p *ngIf="showhideval">This Password is = 'kaka'</p>
+        </div>
+
+        <div class="col-xs-12">
+        <div 
+        *ngFor="let logs of log"
+       [ngStyle]="logs>=5?{'background-color': 'red'} : {'background-color': 'transparent'}"
+       [ngClass]="{'myclass': logs>=5}"
+        >{{logs}}</div>
+        </div>
+    </div>
+</div>
