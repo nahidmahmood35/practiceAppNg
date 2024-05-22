@@ -2,15 +2,7 @@
 <app-warning-msg></app-warning-msg>
 <app-property-binding></app-property-binding>
 <app-directive></app-directive> -->
-<app-header></app-header>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <app-recipes></app-recipes>
-            <app-shopping-list></app-shopping-list>
-        </div>
-    </div>
-</div>
+
 <!--
 <hr>
  <div class="container">
@@ -24,7 +16,7 @@
 <!--Angular child theke perentes e kono function acess korte chile decoretor hisebe Eventemitter and emit bebohar korte hoi(ChatGPT(how to use Eventemitter in angular)) -->
 
 <!--exam-->
-<hr>
+<!-- <hr>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -33,6 +25,16 @@
         <div class="col-md-12">
             <app-odd *ngFor="let tempOddNum of OddNumber" [number]="tempOddNum"></app-odd>
             <app-even *ngFor="let tempEvenNum of EvenNumber" [number]="tempEvenNum"></app-even>
+        </div>
+    </div>
+</div> -->
+
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+            <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list>
         </div>
     </div>
 </div>
