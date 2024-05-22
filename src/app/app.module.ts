@@ -15,6 +15,10 @@ import { RecipesListComponent } from './recipes/recipes-list/recipes-list.compon
 import { RecipesDetailsComponent } from './recipes/recipes-details/recipes-details.component';
 import { RecipesItemComponent } from './recipes/recipes-list/recipes-item/recipes-item.component';
 import { HeaderComponent } from './header/header.component';
+import { ServerElementComponent } from './server-element/server-element.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
 
 
 
@@ -32,7 +36,11 @@ import { HeaderComponent } from './header/header.component';
     RecipesListComponent,
     RecipesDetailsComponent,
     RecipesItemComponent,
-    HeaderComponent
+    HeaderComponent,
+    ServerElementComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
   ],
   imports: [
     BrowserModule,

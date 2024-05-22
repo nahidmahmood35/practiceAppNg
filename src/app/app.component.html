@@ -11,3 +11,28 @@
         </div>
     </div>
 </div>
+<!--
+<hr>
+ <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <app-server-element *ngFor="let ielement of rowElement" [element]="ielement"></app-server-element>
+        </div>
+    </div>
+</div> --> <!--property binding from parante to child-->
+<!--Angular input decorator how to alias property binding(chitGPT)-->
+<!--Angular child theke perentes e kono function acess korte chile decoretor hisebe Eventemitter and emit bebohar korte hoi(ChatGPT(how to use Eventemitter in angular)) -->
+
+<!--exam-->
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <app-game-control (intervalFired)='onintervalFired($event)'></app-game-control>
+        </div>
+        <div class="col-md-12">
+            <app-odd *ngFor="let tempOddNum of OddNumber" [number]="tempOddNum"></app-odd>
+            <app-even *ngFor="let tempEvenNum of EvenNumber" [number]="tempEvenNum"></app-even>
+        </div>
+    </div>
+</div>
